@@ -50,14 +50,18 @@ const Analytic = () => {
             <Divider />
             <CardContent className={classes.content}>
                 <Grid container>
-                    <Grid item xs={12} md={5} lg={4}>
-                        <Typography variant="h3" className={classes.bold}>
-                            9,673
-                        </Typography>
-                        <Typography variant="h6" className={classes.bold}>
-                            Gained Followers (last 30 days)
-                        </Typography>
-                        <div className={classes.verticalMargin}>
+                    <Grid item xs={12} md={5} lg={4} container justify="center" direction="column">
+                        <Grid item>
+                            <Typography variant="h3" className={classes.bold}>
+                                9,673
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="h6" className={classes.bold}>
+                                Gained Followers (last 30 days)
+                            </Typography>
+                        </Grid>
+                        <Grid item className={classes.verticalMargin}>
                             <Grid container alignItems="center" spacing={2}>
                                 <Grid item>
                                     <KeyboardArrowUpIcon className={clsx(classes.icon, classes.green)} />
@@ -80,7 +84,7 @@ const Analytic = () => {
                                     </Typography>
                                 </Grid>
                             </Grid>
-                        </div>
+                        </Grid>
                     </Grid>
                     <Grid item xs={12} md={7} lg={8}>
                         <LineChart />
