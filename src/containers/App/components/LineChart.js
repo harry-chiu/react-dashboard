@@ -6,6 +6,7 @@ import {
     YAxis,
     Tooltip,
     CartesianGrid,
+    ResponsiveContainer,
 } from 'recharts';
 
 const data = [
@@ -56,14 +57,15 @@ const yAxisConfig = {
 
 const LineChartWrapper = () => {
     return (
-        <LineChart width={730} height={250} data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis dataKey="name" {...xAxisConfig} />
-            <YAxis {...yAxisConfig} />
-            <Tooltip />
-            <Line type="monotone" dataKey="followers" stroke="#8884d8" />
-        </LineChart>
+        <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={data}>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                <XAxis dataKey="name" {...xAxisConfig} />
+                <YAxis {...yAxisConfig} />
+                <Tooltip />
+                <Line type="monotone" dataKey="followers" stroke="#8884d8" />
+            </LineChart>
+        </ResponsiveContainer>
     );
 };
 
