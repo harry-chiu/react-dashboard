@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => ({
         width: 64,
         height: 56,
         [theme.breakpoints.down('sm')]: {
-            width: 200,
+            width: 280,
             justifyContent: 'flex-start',
         },
     },
