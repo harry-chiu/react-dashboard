@@ -10,3 +10,6 @@ You can preview the live demo [here](https://harry-chiu.github.io/react-dashboar
 - [React](https://reactjs.org/)
 - [Material-UI](https://material-ui.com/)
 - [Recharts](http://recharts.org/en-US)
+
+## UI Designer
+[Filip Justić](https://dribbble.com/filipjustic)
