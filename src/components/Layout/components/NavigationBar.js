@@ -70,6 +70,11 @@ const useStyles = makeStyles(theme => ({
     red: {
         color: '#ef3637',
     },
+    hideInDesktop: {
+        [theme.breakpoints.up('md')]: {
+            display: 'none',
+        },
+    },
 }));
 
 const NavigationBar = ({ handleDrawerOpen }) => {
@@ -86,11 +91,9 @@ const NavigationBar = ({ handleDrawerOpen }) => {
         >
             <Toolbar className={classes.toolbar}>
                 <Grid container alignItems="center" spacing={2}>
-                    <Grid item>
+                    <Grid item className={classes.hideInDesktop}>
                         <IconButton
                             edge="start"
-                            color="inherit"
-                            aria-label="open drawer"
                             className={classes.icon}
                             onClick={handleDrawerOpen}
                         >
