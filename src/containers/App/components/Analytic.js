@@ -50,7 +50,7 @@ const Analytic = () => {
             <Divider />
             <CardContent className={classes.content}>
                 <Grid container>
-                    <Grid item container alignItems="center" xs={12} md={4}>
+                    <Grid item xs={12} md={5} lg={4}>
                         <Typography variant="h3" className={classes.bold}>
                             9,673
                         </Typography>
@@ -82,7 +82,7 @@ const Analytic = () => {
                             </Grid>
                         </div>
                     </Grid>
-                    <Grid item xs={12} md={8}>
+                    <Grid item xs={12} md={7} lg={8}>
                         <LineChart />
                     </Grid>
                 </Grid>
