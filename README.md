@@ -1,5 +1,5 @@
 # React Dashboard
-I clear dashboard created by [Material-UI](https://material-ui.com/) library.
+A clear dashboard created by [Material-UI](https://material-ui.com/) library.
 
 ![Imgur](https://i.imgur.com/o6bBTFM.png)
 
